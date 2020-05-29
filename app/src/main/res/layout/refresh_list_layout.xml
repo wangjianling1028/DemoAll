@@ -13,7 +13,14 @@
         android:layout_height="wrap_content"
         app:srlEnableLastTime="true"
         app:srlClassicsSpinnerStyle="FixedBehind"
-        app:srlDrawableProgress="@drawable/loading_footer"/>
+        app:srlDrawableProgress="@drawable/loading_footer"
+        app:srlTextSizeTitle="@dimen/sp_12"
+        app:srlTextSizeTime="@dimen/sp_8"
+        app:srlTextTimeMarginTop="@dimen/dp_2"
+        app:srlDrawableArrowSize="@dimen/dp_20"
+        app:srlDrawableProgressSize="@dimen/dp_20"
+        app:srlDrawableMarginRight="@dimen/dp_20"
+        />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -21,6 +28,8 @@
         android:background="@android:color/white"
         android:overScrollMode="never"/>
     <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        app:srlTextSizeTitle="@dimen/sp_12"
+        app:srlTextSizeTime="@dimen/sp_8"
         app:srlDrawableProgress="@drawable/loading_footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
